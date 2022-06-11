@@ -57,6 +57,7 @@ binlog_do_db            = scobees
 relay_log               = /var/log/mysql/mysql-relay.log
 gtid_mode               = ON
 enforce-gtid-consistency= ON
+log_slave_updates       = true
 
 ### restart mysql
 sudo service mysql restart

@@ -28,6 +28,10 @@ bind-address            = 0.0.0.0
 server-id               = 1
 log_bin                 = /var/log/mysql/mysql-bin.log
 binlog_do_db            = myDB 
+gtid_mode               = ON
+enforce-gtid-consistency= ON
+log_slave_updates       = true
+
 
 ### restart mysql
 sudo service mysql restart
